@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/logo-site.png">
+    <title>Namora comigo?</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <style>
+      .background-1,
+      .background-2,
+      .background-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        z-index: -1;
+      }
+      .cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .cta h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-1"></div>
+    <div class="background-2"></div>
+    <div class="background-3">
+      <div class="cta" style="height: 200px;">
+        <h2 style="color: antiquewhite;">Quer sair comigo?</h2>
+        <button class="btn" id="yes">
+          <span class="btn-text-one">Sim</span>
+          <span class="btn-text-two">Eita! 💕</span>
+        </button>
+        <button class="btn no">
+          <span class="btn-text-one">Não</span>
+          <span class="btn-text-two">😅</span>
+        </button>
+        
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
